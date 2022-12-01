@@ -3,7 +3,7 @@
 /* ttf 형식으로 font 적용 */
 @font-face {
 	font-family: "Birds";
-	src: url("../font/birds_of_paradise/Birds\ of\ Paradise\ _PERSONAL\ USE\ ONLY.ttf")
+	src: url("../resources/font/birds_of_paradise/Birds\ of\ Paradise\ _PERSONAL\ USE\ ONLY.ttf")
 		format("truetype");
 	font-weight: normal;
 	font-style: normal;
@@ -11,7 +11,7 @@
 
 @font-face {
 	font-family: "Cafe24Oneprettynight";
-	src: url("../font/Cafe24Oneprettynight/Cafe24Oneprettynight.ttf")
+	src: url("../resources/font/Cafe24Oneprettynight/Cafe24Oneprettynight.ttf")
 		format("truetype");
 }
 * {
