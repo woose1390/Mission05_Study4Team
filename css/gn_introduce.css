@@ -132,8 +132,12 @@ font-family: "Apa";
   text-align: center;
   position: static;
 }
-.jumbotron ul  {
-  margin-left: -50px;
+  .jumbotron ul  {
+  margin-left: -100px;
+  text-align: center;
+}
+.jumbotron ul li{
+
 }
 .slide{
   width: 450px;
@@ -161,7 +165,12 @@ footer{
   text-align: center;
   background-color: lightgreen;
 }
-footer h4{
+footer h3{
   height: 200px;
-  line-height: 200px;
+  line-height: 120px;
+}
+address{
+  margin-top: -110px;
+  text-align: left;
+  margin-left: 150px;
 }
