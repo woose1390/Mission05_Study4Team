@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이구로헬스짐</title>
+    <link rel="stylesheet" href="../css/vegas.min.css">
+    <link rel="stylesheet" href="es.css">
+    <script src="javascript/jquery-1.12.3.js"></script>
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+    <style type="text/css">
+       @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+@font-face {
+font-family: 'NanumSquareNeo';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+    </style>
+   
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo" >
+                <a href="#"><img src="images/realLogo.png" alt="로고이미지"></a>
+            </div>
+            <nav class="menu">
+                <ul class="navi">
+                    <li><a href="#">시설소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">운영시간</a></li>
+                            <li><a href="#">시설내부</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">문의안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">커리큘럼</a></li>
+                            <li><a href="#">수강시간표</a></li>
+                            <li><a href="#">연락처문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">트레이너 소개</a>
+                        <ul class="submenu">
+                            <li><a href="#">헬스</a></li>
+                            <li><a href="#">필라테스</a></li>
+                            <li><a href="#">댄스</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="submenu">
+                            <li><a href="#">인스타그램</a></li>
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">카카오톡</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공지사항</a>
+                        <ul class="submenu">
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bodywrap">
+        <div class="imgslide">
+            <IMG src="images/69959_4950_1529.jpg" width="1300px" height="600px"</IMG>
+        </div>
+        <div class="contents">
+            <ul class="tabmenu">
+                <li class="active"><a href="#">공지사항</a>
+                    <div class="notice"> 
+                        <ul>
+                            <li><a href="#">[필독]코로나 19관련 방역수칙<span>2021.03.22</span></a></li>
+                            <li><a href="#">★★수험생이벤트★★<span>2022.11.20</span></a></li>
+                            <li><a href="#">운영시간 변경 안내<span>2022.11.25</span></a></li>
+                            <li><a href="#">12월 필라테스 개강 안내<span>2022.11.25</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <a href="#">대표트레이너</a>
+                    <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="images/girl.webp" alt="갤러리 이미지1"></a></li>
+                            <li><a href="#"><img src="images/hey" alt="갤러리 이미지2"></a></li>
+                            <li><a href="#"><img src="images/man" alt="갤러리 이미지3"></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="otherwrap">
+                <div class="banner">
+                    <a href="vidio.html">
+                        <img src="images/ball.png" alt="배너이미지"><h4 class="bntext">운동영상 시청하기</h4>
+                    </a>
+                </div>  
+                <div class="shortcut">
+                    <a href="#">
+                        <img src="images/full.jpg" alt="바로가기이미지">
+                        <h4 class="sctext">시설안내 바로가기</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 레이어 팝업창 영역 -->
+    <div id="layer">
+        <div class="layer_up">
+            <div class="uptitle">하이구로헬스짐 코로나19관련 공지사항</div>
+            <div class="upbody">
+            안녕하세요. 하이구로헬스짐입니다.<br>
+            하이구로헬스점에서는 필라테스, 댄스, 헬스, PT 등 다양한  고객맞춤형서비스를 제공하고 있습니다.<br>
+            코로나19관련 방역지침에대해 안내드립니다.<br>
+            고객분들께서는 손소독, 열체크 진행 후 입장 부탁드리며 운동중에도 마스크를 착용해주시길 바랍니다.
+            </div>
+            <div class="btn">닫기</div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/vegas.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           //문서 전체(body 태그)에 플러그인 적용함
+           $(".imgslide").vegas({
+           slides: [
+               //초반 이미지 나타나게 함 , 주석처리하면 안나타남
+           // {src: '/images/sea.jpg' },
+           //video{}배경 안에 배경동영상과 옵션값 지정함
+            {   src: '../images'},
+            {   src: '../images/nature-2.jpg' },
+           {   src: '../images/nature-3.jpg' },
+           {   src: '../images/sea.jpg',
+               video: {
+                   // src 속성을 사용해 동영상 지정해 줌
+                   src: [
+                    //    '../videos/drive.mp4',
+                   ],
+                   //loop  속성을 사용해 동영상 반복 여주 지정함
+                   loop: true,
+                   // 동영상을 무음 상태로 만들어줌
+                   mute: true
+               }
+           }
+         ]
+       });
+   }); 
+   </script>
+
+   <footer>
+    <div class="btlogo"><a href="#">
+        <img src="images/realLogo.png" alt="하단로고">
+    </a></div>
+    <div class="site">
+        <div class="btmenu">
+            <ul>
+                <li><a href="#">필라테스문의</a></li>
+                <li><a href="#">PT수업문의</a></li>
+                <li><a href="#">헬스장이용문의</a></li>
+                <li><a href="map.html">시설위치보기</a></li>
+            </ul>
+        </div>
+        <div class="copy">COPYRIGHT &copy; by WEBDESIGN. ALL RIGHTS RESERVED</div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
